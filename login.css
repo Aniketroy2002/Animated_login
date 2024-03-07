@@ -1,0 +1,65 @@
+.login{
+    height: auto;
+    max-width: 40vw;
+    border: 3px solid black;
+    border-radius: 20px;
+    box-shadow: 0 0 4rem 0;
+    margin: auto;
+    animation-name: anime,float;
+    animation-duration: 10s , 5s;
+    animation-iteration-count: infinite , 1;
+}
+.login h1{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-shadow: 1px 1px black;
+}
+.details{
+    flex-direction: column;
+    text-align: center;
+}
+.details input{
+    text-align: center;
+    margin: 0.5rem;
+    height: 5vh;
+    border: 2px solid rgb(204, 198, 198);
+    border-radius: 3px;
+    width: 90%;
+    box-shadow: 0 0.1rem 0 0;
+}
+.details textarea{
+    text-align: center;
+    margin: 0.5rem;
+    border: 2px solid rgb(204, 198, 198);
+    border-radius: 3px;
+    width: 90%;
+    box-shadow: 0 0.1rem 0 0;
+}
+
+.details button{
+    margin: 0.5rem;
+    border: 3px solid black;
+    border-radius: 10px;
+    height: 5vh;
+    font-weight: 700;
+    background-color: orange;
+    text-align: center;
+    transition-duration: .4s;
+    cursor: pointer;
+}
+
+@keyframes anime{
+    100%{background-color: aqua;}
+}
+@keyframes float{
+    0%{
+        transform: translateY(0rem);
+    }
+    50%{
+        transform: translateY(3.8rem);
+    }
+    100%{
+        transform: translateY(0rem);
+    }
+}
